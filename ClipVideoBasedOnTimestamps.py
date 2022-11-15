@@ -36,13 +36,13 @@ def main ():
 
     #FinalClip.write_videofile(OutputFileName, temp_audiofile='temp-audio.m4a', remove_temp=True, codec="libx264", audio_codec="aac")
 
-VideoFileName = "D:\kurtYoutube\Video9\\2022-08-2212-00-54Trim.mp4"
-parserDataFilePath = "D:\kurtYoutube\Video9\Timestamps.txt"
-subclipFolder = "D:\kurtYoutube\Video8\Subclips\\"
+VideoFileName = ""
+parserDataFilePath = ""
+subclipFolder = ""
 
 
 window= Tk()
-window.title("Kurt's Video Parser")
+window.title("Python Video Parser")
 
 Label (window, text="Video File Path", fg="black", font="none 16 bold") .grid(row=1, column=0)
 TextEntry1 = Entry(window, width=150, bg="white",text="DEGREE FAHRENHEIT")
@@ -65,9 +65,6 @@ outputText.grid(row = 5, column = 0, columnspan = 2)
 Button(window, text="Run", width=30, command=main) .grid(row=4,column=0)
 
 window.mainloop()
-
-#VideoFileName = "D:\kurtYoutube\Python\VideoFiles\KurtsSundayMillionRunP1.mp4"
-#OutputFileName = "KurtsSundayMillionRunFinalFirstCut1.mp4"
 
 
 
